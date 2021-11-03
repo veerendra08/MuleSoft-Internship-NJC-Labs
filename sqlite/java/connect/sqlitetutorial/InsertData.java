@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class InsertData {
 
     private Connection connect() {
-        // SQLite connection string
+       
         String url = "jdbc:sqlite:C://sqlite/db/Movies.db";
         Connection conn = null;
         try {
@@ -35,9 +35,7 @@ public class InsertData {
         }
     }
 
-    /**
-     * @param args the command line arguments
-     */
+  
     public static void main(String[] args) {
 
         InsertData app = new InsertData();
