@@ -5,17 +5,10 @@ import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-/**
- *
- * @author sqlitetutorial.net
- */
+
 public class NewDb {
 
-    /**
-     * Connect to a sample database
-     *
-     * @param fileName the database file name
-     */
+  
     public static void createNewDatabase(String fileName) {
 
         String url = "jdbc:sqlite:C:/sqlite/db/" + fileName;
@@ -32,9 +25,7 @@ public class NewDb {
         }
     }
 
-    /**
-     * @param args the command line arguments
-     */
+  
     public static void main(String[] args) {
         createNewDatabase("Movies.db");
     }
